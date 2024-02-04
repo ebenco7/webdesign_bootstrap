@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Engineering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Frontend Engineering</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="#navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What You'll Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a <span class="text-warning">Web Developer</span></h1>
+
+                    <p class="lead my-4">
+                        We focus on teaching our students the fundamentals of the latest and greatest technologies to
+                        prepare them for their first dev role
+                    </p>
+                    <button class="btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start The
+                        Enrolment</button>
+                </div>
+                <img class="img-fluid d-none d-sm-block" src="img/showcase.jpg" id="showcase" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign Up For Newsletter</h3>
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email">
+                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <!-- Box 1: Virtual -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Virtual</h3>
+                            <p class="card-text">Focused on providing a virtual learning experience with hands-on
+                                projects.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2: Hybrid -->
+                <div class="col-md">
+                    <div class="col-md">
+                        <div class="card bg-secondary text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-person-square"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Hybrid</h3>
+                                <p class="card-text">Combining online and in-person sessions for a flexible learning
+                                    experience.</p>
+                                <a href="#" class="btn btn-dark">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Box 3: In Person -->
+                <div class="col-md">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h3 class="card-title mb-3">In Person</h3>
+                                <p class="card-text">Hands-on, in-person learning for a collaborative and immersive
+                                    experience.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/fundamental.webp" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn The Fundamentals</h2>
+                    <p class="lead">
+                        Gain a solid understanding of fundamental concepts and best practices in web development.
+                    </p>
+                    <p>
+                        Explore core technologies, coding languages, and problem-solving techniques that form the
+                        foundation of web development.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn-react" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Learn React</h2>
+                    <p class="lead">
+                        Explore the powerful React library for building dynamic and interactive user interfaces.
+                    </p>
+                    <p>
+                        Dive into component-based architecture, state management, and the latest features of React to
+                        elevate your web development skills.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="img/Rt.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Item 1-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-one">
+                            Where exactly are you located?
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse">
+                        <div class="accordion-body">Our main location is at 50 Main St, Boston, MA.</div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-two">
+                            What does it cost to attend?
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse">
+                        <div class="accordion-body">The cost varies based on the program. Contact us for detailed
+                            information.</div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-three">
+                            What do I need to know?
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse">
+                        <div class="accordion-body">No specific prerequisites. We welcome learners of all levels and
+                            backgrounds.</div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-four">
+                            How do I sign up?
+                        </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse">
+                        <div class="accordion-body">To sign up, visit our website or contact our enrollment team for
+                            assistance.</div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-five">
+                            Do you help to find a job?
+                        </button>
+                    </h2>
+                    <div id="question-five" class="accordion-collapse collapse">
+                        <div class="accordion-body">Yes, we provide career support and guidance to help you find
+                            job opportunities after completing the program.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors -->
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Our Instructors</h2>
+            <p class="lead text-center text-white mb-5">Our instructors all have 5+ years working as web developers
+                in the industry</p>
+            <div class="row g-4">
+                <!-- Instructor 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/0.jpg" class="rounded-circle mb-3"
+                                alt="">
+                            <h3 class="card-title mb-3">Chleo Stone</h3>
+                            <p class="card-text">Enthusiastic web developer with a focus on creating responsive and
+                                user-friendly websites.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Instructor 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3"
+                                    alt="">
+                                <h3 class="card-title mb-3">Jane Smith</h3>
+                                <p class="card-text">Passionate about creating beautiful and functional web applications
+                                    using the latest technologies.</p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Instructor 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/men/13.jpg" class="rounded-circle mb-3"
+                                    alt="">
+                                <h3 class="card-title mb-3">Bob Johnson</h3>
+                                <p class="card-text">Experienced in creating scalable and optimized web applications to
+                                    enhance user experience.</p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Instructor 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/14.jpg" class="rounded-circle mb-3"
+                                    alt="">
+                                <h3 class="card-title mb-3">Emily Davis</h3>
+                                <p class="card-text">Specialized in creating interactive and dynamic user interfaces for
+                                    web applications.</p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Enroll Modal -->
+        <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="enrollLabel">Enroll Now</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Enrollment Form -->
+                        <form id="enrollmentForm">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="program" class="form-label">Select Program</label>
+                                <select class="form-select" id="program" required>
+                                    <option value="" disabled selected>Select Program</option>
+                                    <option value="virtual">Virtual</option>
+                                    <option value="hybrid">Hybrid</option>
+                                    <option value="inPerson">In Person</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enroll Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="p-5 bg-dark text-light text-center">
+            <div class="container">
+                <p>&copy; 2023 eolab</p>
+            </div>
+        </footer>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-cgA/7yRiHQwWJ8cFGeSb9RSWcflP7NCF0op8aOe7dP2V14vI0fKj+PzCkbDbV7q" crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
